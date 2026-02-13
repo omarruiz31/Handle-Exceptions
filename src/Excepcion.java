@@ -20,6 +20,7 @@ public class Excepcion {
             System.out.println("Ingresa un numero par");
             int num = sc.nextInt();
             ex.esPar(num);
+            System.out.println("sin excepcion");
         }
         catch (IllegalArgumentException e){
             System.out.println(e.getMessage());
