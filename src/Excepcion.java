@@ -14,8 +14,15 @@ public class Excepcion {
 
     public static void main(String[] args) {
         Excepcion ex = new Excepcion();
+        Scanner sc = new Scanner(System.in);
 
-        ex.esPar(2);
-        ex.esPar(1);
+        try{
+            System.out.println("Ingresa un numero par");
+            int num = sc.nextInt();
+            ex.esPar(num);
+        }
+        catch (IllegalArgumentException e){
+            System.out.println(e.getMessage());
+        }
     }
 }
